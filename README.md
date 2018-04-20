@@ -8,4 +8,8 @@ learning Git.
 
 ```sh
 ./glitter.js 5
+
+./glitter.js 3 colors
+./glitter.js 10 flowers
+./glitter.js 42 elements
 ```
