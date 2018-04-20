@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const { spawnSync } = require('child_process')
 
 const verbs = [
   'Add',
@@ -52,5 +53,10 @@ const getMessage = () => {
 let count = parseInt(process.argv[2], 10)
 while (count--) {
   const message = getMessage()
+  spawnSync('git', [
+    'commit',
+    '--allow-empty',
+    '-m',
+    message
+  ])
 }
-
