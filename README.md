@@ -7,5 +7,5 @@ learning Git.
 ## Usage
 
 ```sh
-glitter 5
+./glitter.js 5
 ```
