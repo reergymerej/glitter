@@ -34,3 +34,18 @@ d3dfb26 orchid
 1255b63 violet
 e1d47dc Change five experimental Nickel
 ```
+
+
+## Install
+
+You can symlink this to something in your path to make it available all over.
+
+```
+ln -s "$PWD/glitter.js" /usr/local/bin/glitter
+```
+
+After that, just call it anywhere.
+
+```
+glitter 6
+```
