@@ -18,6 +18,19 @@ const verbs = [
   'Change',
 ]
 
+const numbers = [
+  'zero',
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine',
+]
+
 const adjectives = [
   'tricky',
   'helpful',
@@ -194,8 +207,10 @@ const getMessage = (category) => {
       return getOne(flowers)
     case 'elements':
       return getOne(elements)
+    case 'numbers':
+      return getOne(numbers)
     default:
-      return `${getOne(verbs)} ${getOne(adjectives)} ${getOne(nouns)}`
+      return `${getOne(verbs)} ${getOne(numbers)} ${getOne(adjectives)} ${getOne(nouns)}`
   }
 }
 
