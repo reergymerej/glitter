@@ -9,11 +9,11 @@ learning Git.
 These commands...
 
 ```sh
-./glitter.js 1
-./glitter.js 2 colors
-./glitter.js 3 flowers
-./glitter.js 4 elements
-./glitter.js 5 numbers
+glitter 1
+glitter 2 colors
+glitter 3 flowers
+glitter 4 elements
+glitter 5 numbers
 ```
 
 would give you a history similar to this...
@@ -38,10 +38,8 @@ e1d47dc Change five experimental Nickel
 
 ## Install
 
-You can symlink this to something in your path to make it available all over.
-
 ```
-ln -s "$PWD/glitter.js" /usr/local/bin/glitter
+yarn global add reergymerej.glitter
 ```
 
 After that, just call it anywhere.

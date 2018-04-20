@@ -1,0 +1,23 @@
+{
+  "name": "reergymerej.glitter",
+  "version": "1.0.0",
+  "description": "This helps you make dummy commits in your Git repo.  That can be useful when learning Git.",
+  "main": "glitter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/glitter.git"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "glitter": "glitter.js"
+  },
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reergymerej/glitter/issues"
+  },
+  "homepage": "https://github.com/reergymerej/glitter#readme"
+}
