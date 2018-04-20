@@ -1,6 +1,6 @@
 # Glitter
 
-This helps you make dummy commits in your git repo!  That can be useful when
+This helps you make dummy commits in your Git repo.  That can be useful when
 learning Git.
 
 
