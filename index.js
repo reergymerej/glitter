@@ -217,9 +217,16 @@ const getMessage = (category) => {
 
 let count = parseInt(process.argv[2], 10)
 const category = process.argv[3]
+let previousMessage
 
 while (count--) {
-  const message = getMessage(category)
+  let message
+  while (true) {
+    message = getMessage(category)
+    if (message !== previousMessage) {
+      break
+    }
+  }
   fs.appendFileSync('glitter', `${message}\n`)
   spawnSync('git', [
     'add',
@@ -230,4 +237,5 @@ while (count--) {
     '-m',
     message,
   ])
+  previousMessage = message
 }
