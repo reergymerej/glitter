@@ -35,6 +35,11 @@ d3dfb26 orchid
 e1d47dc Change five experimental Nickel
 ```
 
+This will write changes to a `glitter` file so they are not just empty commits.
+This is helpful when playing with rebase, as it normally [skips empty
+commits](https://git-scm.com/docs/git-rebase#git-rebase---keep-empty).
+
+
 
 ## Install
 
