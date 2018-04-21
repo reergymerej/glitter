@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const fs = require('fs')
 const { spawnSync } = require('child_process')
 
 const colors = [
@@ -219,10 +220,14 @@ const category = process.argv[3]
 
 while (count--) {
   const message = getMessage(category)
+  fs.appendFileSync('glitter', `${message}\n`)
+  spawnSync('git', [
+    'add',
+    'glitter',
+  ])
   spawnSync('git', [
     'commit',
-    '--allow-empty',
     '-m',
-    message
+    message,
   ])
 }
